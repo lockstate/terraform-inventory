@@ -42,8 +42,8 @@ func gatherResources(s *state) map[string]interface{} {
 		}
 	}
 
-	groups["_meta"] = map[string]map[string]string{
-		"hostvars": make(map[string]string),
+	groups["_meta"] = map[string]map[string]interface{}{
+		"hostvars": make(map[string]interface{}),
 	}
 
 	return groups
